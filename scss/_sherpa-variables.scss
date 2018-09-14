@@ -63,7 +63,7 @@ $sherpa-navbar-default-toggle-icon-bar-bg:		$white;
 
 // Testimonials
 /// Testimonial A
-$testimonial-a: lighten($black, 45%);
+$testimonial-a: #f9f9f9;
 $testimonial-a-accent: lighten($testimonial-a, 10%);
 $testimonial-a-color: $black;
 $testimonial-a-border-color: $testimonial-a-accent;
@@ -79,3 +79,4 @@ $testimonial-b-border-color: $testimonial-b-accent;
 $sm-color: $white;
 $sm-hover-color: $sm-color;
 $singlecolor: $sherpa-primary-color;
+$link-hover-decoration: none;

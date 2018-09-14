@@ -242,7 +242,7 @@
     line-height: $line-height-computed;
   }
 
-  @media (max-width: $grid-float-breakpoint-max) {
+  @media (max-width: $screen-sm-max) {
     // Dropdowns get custom display when collapsed
     .open .dropdown-menu {
       position: static;
@@ -254,7 +254,7 @@
       box-shadow: none;
       > li > a,
       .dropdown-header {
-        padding: 5px 15px 5px 25px;
+        padding: 5px 25px 5px 25px;
       }
       > li > a {
         line-height: $line-height-computed;

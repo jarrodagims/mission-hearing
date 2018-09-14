@@ -16,70 +16,73 @@
         <section>
             <div class="flex-col bg">
                 <div class="container-half">
-                    <div class="header">
-                        <div class="h2">
-                            <span class="title">A TRADITION OF</span>
-                            <span class="subtitle">BUILDING & <br />CONSTRUCTION</span>
-                        </div>
-                    </div>
-
                     <section class="icon-row">
-                        <ul class="flex-row">
-                            <li class="flex-col">
-                                <a href="<?= SITEURL; ?>/commercial-site-development">
-                                    <?php get_template_part('template-parts/icon', 'spade'); ?>
-                                    Construction &
-                                    <br/>Site Development
-                                </a>
-                            </li>
-                            <li class="flex-col">
-                                <a href="<?= SITEURL; ?>/construction-management/">
-                                    <?php get_template_part('template-parts/icon', 'cone'); ?>
-                                    Construction
-                                    <br/>Management</a>
-                            </li>
-                            <li class="flex-col">
-                                <a href="<?= SITEURL; ?>/paving/">
-                                    <?php get_template_part('template-parts/icon', 'paving'); ?>
-                                    Paving <br/>& Asphalt</a>
-                            </li>
-                            <li class="flex-col">
-                                <a href="<?= SITEURL; ?>/government-contracting/">
-                                    <?php get_template_part('template-parts/icon', 'gov'); ?>
-                                    Government<br/>
-                                    Contracting</a></li>
-                            <li class="flex-col">
-                                <a href="<?= SITEURL; ?>/road-and-highway-construction/">
-                                    <?php get_template_part('template-parts/icon', 'highway'); ?>
-                                    Highway &<br/>
-                                    Road Construction</a>
-                            </li>
-                            <li class="flex-col">
-                                <a href="<?= SITEURL; ?>/utility-installation-construction/">
-                                    <?php get_template_part('template-parts/icon', 'utility'); ?>
-                                    Utility<br/>
-                                    Installation</a>
-                            </li>
-                            <li class="flex-col">
-                                <a href="<?= SITEURL; ?>/services/">
-                                    <?php get_template_part('template-parts/icon', 'landscaping'); ?>
-                                    Landscaping</a>
-                            </li>
-
-                            <li class="flex-col contact-button">
-                                <a href="<?= SITEURL; ?>/contact-us/">
-                                    Contact Us</a>
-                            </li>
-                        </ul>
+                            <ul class="flex-row">
+                                <li class="flex-col">
+                                    <a href="<?= SITEURL; ?>/services/mock-trials/">
+                                        <?php get_template_part('template-parts/icon', '1'); ?>
+                                        Mock Trials
+                                    </a>
+                                </li>
+                                <li class="flex-col">
+                                    <a href="<?= SITEURL; ?>/services/focus-groups/">
+                                        <?php get_template_part('template-parts/icon', '2'); ?>
+                                        Focus Groups</a>
+                                </li>
+                                <li class="flex-col">
+                                    <a href="<?= SITEURL; ?>/services/jury-selection/">
+                                        <?php get_template_part('template-parts/icon', '3'); ?>
+                                        Jury Selection</a>
+                                </li>
+                                <li class="flex-col">
+                                    <a href="<?= SITEURL; ?>/services/post-verdict-research/">
+                                        <?php get_template_part('template-parts/icon', '4'); ?>
+                                        Post Verdict <br />Research</a></li>
+                                <li class="flex-col">
+                                    <a href="<?= SITEURL; ?>/services/attitude-surveys/">
+                                        <?php get_template_part('template-parts/icon', '5'); ?>
+                                        Attitude Surveys</a>
+                                </li>
+                                <li class="flex-col">
+                                    <a href="<?= SITEURL; ?>/services/witness-preparation-and-training/">
+                                        <?php get_template_part('template-parts/icon', '6'); ?>
+                                        Witness Preparation</a>
+                                </li>
+                                <li class="flex-col">
+                                    <a href="<?= SITEURL; ?>/services/shadow-jury/">
+                                        <?php get_template_part('template-parts/icon', '7'); ?>
+                                        Shadow Jury</a>
+                                </li>
+                                <li class="flex-col">
+                                    <a href="<?= SITEURL; ?>/services/trial-graphics/">
+                                        <?php get_template_part('template-parts/icon', '8'); ?>
+                                        Trial Graphics</a>
+                                </li>
+                            </ul>
                     </section>
 
-                    <div class="contact-us">
-
-                        <?php get_template_part('template-parts/testimonial-slider'); ?>
-
-                    </div>
                 </div>
             </div>
         </section>
+
+    <section>
+        <div class="card">
+            <div class="card-title">Our Client Comments</div>
+
+            <div class="card-bottom transparent">
+                <?php get_template_part('template-parts/testimonial-slider'); ?>
+                <a href="<?= SITEURL; ?>/testimonials/">
+                    <button class="btn btn-default">
+                        Testimonials
+                    </button>
+                </a>
+                <a href="<?= SITEURL; ?>/contact-us/">
+                    <button class="btn btn-primary">
+                        Schedule an Appointment
+                    </button>
+                </a>
+            </div>
+        </div>
+    </section>
     <?php endif; ?>
 </div>

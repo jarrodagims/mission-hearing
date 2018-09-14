@@ -2,23 +2,8 @@
   padding-bottom: 0;
 }
 
-@media screen and (max-width: $grid-float-breakpoint-max) {
-  .logo-header {
-    text-align: center;
-    padding-top: 8px;
-    padding-bottom: 8px;
-    display: flex !important;
-    justify-content: center;
 
-    .navbar-brand img {
-      height: 55px;
-      width: auto;
-      margin: 0 auto;
-    }
-  } 
-}
-
-@media screen and (min-width: $screen-sm-min) {
+@media screen and (min-width: $screen-md-min) {
   .sub-header.top-header {
     background: #FFFFFF;
     padding: 0 0;
@@ -61,8 +46,8 @@
 }
 
 .sub-header {
-  background: #5F6A70 !important;
-  color: #fff; 
+  background: #fff !important;
+  color: #fff;  
   padding: 10px 0;
   position: relative;
   overflow: visible;
@@ -86,18 +71,26 @@
 
   }
 
-  @media screen and (min-width: $screen-sm-min) {
+  @media screen and (min-width: $screen-md-min) {
     padding: 0 0;
+    @include dropshadow();
+    background: #5F6A70 !important;
 
     .v-align {
       height: 150px;
     }
   }
 
-  @media screen and (max-width: $grid-float-breakpoint-max) {
+  @media screen and (max-width: $screen-sm-max) {
     padding: 0 0;
     z-index: 1;
     background: $sherpa-dark-color;
+
+
+      &::before {
+        top: auto;
+        bottom: 0;
+      }
 
     .sub-header.top-header {
       background: $sherpa-dark-color;
@@ -107,20 +100,11 @@
       justify-content: flex-start;
       text-align: center;
       align-items: center;
-
-      .navbar-brand {
-        align-self: flex-start;
-        margin-top: 10px;
-        position: absolute;
-        left: 50%;
-        transform: translateX(-50%);
-        width: 90px;
-      }
     }
   }
 }
 
-.page-template-default, .blog, .error-404, .post-template-default {
+.page-template-default, .blog, .error404, .post-template-default, .page-template-page-testimonials {
   .sub-header {
     background: #F2F2F2;
     margin-bottom: 100px;
@@ -173,6 +157,7 @@
 
     .navbar.navbar-sherpa {
       display: flex;
+      
 
       .navbar-collapse {
         flex: 1;

@@ -5,6 +5,14 @@
 
     .extra-padding {
       padding-right: 50px;
+      padding-top: 2em;
+    }
+    h2 {
+      font-size: 33px;
+    }
+    h3 {
+      margin-top: 0;
+      font-size: 28px;
     }
   }
 
@@ -13,6 +21,7 @@
     font-weight: 300;
     margin-top: 2em;
     margin-bottom: 2em;
+    line-height: 1.85;
   }
 
   h2 {
@@ -23,19 +32,68 @@
     background: #5F6A70;
     color: #fff;
     text-align: center;
-    padding: 60px 80px;
+    padding: 60px 100px;
     @include dropshadow();
 
 
     h2 {
       @include raleway();
       font-size: 27px;
-      font-weight: 300;
+      font-weight: 400;
+      margin-top: 0;
+      line-height: 1.35;
     }
 
     p.blurb {
       color: #BDC4C6;
       font-size: 18px;
     }
+  }
+
+  @media screen and (max-width: $screen-sm-max) {
+
+    .flex-row {
+      flex-direction: column;
+    }
+
+    h2 {
+      margin-bottom: .5em;
+    }
+
+    .box {
+      margin: 0 20px;
+      padding: 40px;
+      margin-bottom: 2em;
+
+      h2 {
+        font-size: 19px;
+        margin-bottom: 0;
+      }
+
+      p {
+        margin-bottom: 0;
+      }
+
+      p.blurb {
+        font-size: 14px;
+        margin-bottom: 2em;
+      }
+    }
+
+    
+    p.blurb {
+      font-size: 17px;
+      line-height: 1.75;
+    }
+
+    h3 {
+      margin-top: 0;
+    }
+
+    h2, h3 {
+      font-size: 19px;
+    }
+
+    text-align: center;
   }
 }

@@ -8,34 +8,37 @@
     </div>
 <section id="footer">
     <div class="container">
-            <div class="row">
-                <div class="col-xs-12 col-md-4 logo-footer">
-                    <h2>Contact Jonathan Leach, LLC Today</h2>
+            <div class="flex-row row">
+                <div class="col-xs-12 flex-col">
+                    <div class="logo-footer">
+                        <h2>Contact Jonathan Leach, LLC Today</h2>
 
-                    <p>Whether or not a lawsuit is pending, you are invited to contact Jonathan Leach, LLC, for a free consultation regarding the nonlegal factors that may affect your case. Mr. Leach addresses every matter with attention to the particulars of each client's situation. Call now for a free consultation.
-                    </p>
-                </div>
-                <div class="col-xs-12 col-md-2 contact-footer phone-footer">
-                    <div><span class="title">CONTACT</span>
-                        <p>528 Satellite Dr.<br />
-                            El Paso, TX 79912<br />
-                            <strong>PH</strong>. 972.890.8482
-                        </p></div>
-                </div>
-                <div class="col-xs-12 col-md-2 hours-footer">
-                    <div>
-                        <span class="title">HOURS</span>
-                        <p>Monday - Friday: <strong>8:30am - 6:00pm</strong>
-                            Saturday - Sunday: <strong>Closed</strong><br />
+                        <p>Whether or not a lawsuit is pending, you are invited to contact Jonathan Leach, LLC, for a free consultation regarding the nonlegal factors that may affect your case. Mr. Leach addresses every matter with attention to the particulars of each client's situation. Call now for a free consultation.
+                        </p>
+                    </div>
+                    <div class="contact-footer phone-footer">
+                        <div><span class="title">CONTACT</span>
+                            <p>528 Satellite Dr.<br />
+                                El Paso, TX 79912<br />
+                                <strong>PH</strong>. 972.890.8482
+                            </p></div>
+                    </div>
+                    <div class="hours-footer">
+                        <div>
+                            <span class="title">HOURS</span>
+                            <p>Monday - Friday: <br /><strong>8:30am - 6:00pm</strong><br />
+                                Saturday - Sunday: <strong>Closed</strong><br />
+                        </div>
+                    </div>
+                    <div class="button-footer">
+                        <div><span class="title hidden-xs">&nbsp;</span>
+                            <a href="<?= SITEURL ?>/contact-us/"><button class="btn btn-primary">
+                                    Schedule an Appointment
+                                </button></a>
+                        </div>
                     </div>
                 </div>
-                <div class="col-xs-12 col-md-2 hours-footer">
-                    <div><span class="title hidden-xs">&nbsp;</span>
-                        <a href="<?= SITEURL ?>/contact-us/"><button class="btn btn-primary">
-                                Schedule an Appointment
-                            </button></a>
-                    </div>
-                </div>
+
 
                 <div class="col-xs-12 visible-xs visible-sm">
                     <?php $sm = new SocialMedia(array('facebook', 'twitter'));
@@ -50,14 +53,14 @@
 <section class="footer-nav hidden-xs hidden-sm">
     <div class="container">
         <div class="row flex-row">
-            <div class="col-xs-6">
+            <div class="col-xs-2">
                 <?php $sm = new SocialMedia(array('facebook', 'twitter'));
                 $sm->setSize('sm');
                 $sm->showNetworkButtons();
                 $sm->setColorType('singleColor');
                 ?>
             </div>
-            <div class="col-xs-6">
+            <div class="col-xs-10">
                 <?php echo non_responsive_bs_menu('footer'); ?>
             </div>
         </div>
